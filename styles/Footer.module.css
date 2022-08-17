@@ -1,0 +1,35 @@
+.footerWrapper {
+    width: 100vw;
+    background-color: var(--dark-surface);
+    margin-top: 10%;
+    padding-bottom: 2%;
+}
+
+.footerLogo {
+    width: 10%;
+    min-width: 100px;
+    margin: auto;
+    padding-top: 5%;
+}
+
+.copyright {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    color: var(--text-on-dark-surface);
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 10%;
+}
+
+.socials {
+    color: var(--text-on-dark-surface);
+}
+
+@media screen and (max-width: 700px) {
+    .footerLogo {
+        padding-top: 15%;
+    }
+    .NewsLetterForm {
+        margin-top: 15%;
+    }
+}

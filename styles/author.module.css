@@ -1,0 +1,85 @@
+.authorInfoContainer {
+    width: fit-content;
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--color-our-primary);
+}
+
+.authorIntro {
+    font-family: "Montserrat", sans-serif;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 2.5rem;
+    color: var(--section-header-on-background);
+    margin-top: 7%;
+}
+
+.authorProfile {
+    display: flex;
+    align-items: center;
+}
+
+.authorAbout {
+    margin-left: 30px;
+}
+
+.authorImage {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+}
+
+.authorName {
+    font-size: 1.5rem;
+    font-weight: 600;
+    opacity: 0.5;
+}
+
+.authorBio {
+    font-size: 2.5rem;
+    line-height: 1.5;
+    font-weight: 700px;
+    width: 60%;
+}
+
+@media screen and (max-width: 1280px) {
+    .authorIntro {
+        font-size: 2rem;
+    }
+    .authorBio {
+        font-size: 1.5rem;
+        width: fit-content;
+    }
+    .authorName {
+        font-size: 1rem;
+        font-weight: 600;
+        opacity: 0.5;
+    }
+    .authorImage {
+        width: 60%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .authorInfoContainer {
+        width: 90%;
+    }
+    .authorIntro {
+        font-size: 1.5rem;
+    }
+    .authorProfile {
+        gap: 5%;
+    }
+    .authorAbout {
+        margin-left: 0;
+    }
+    .authorImage {
+        width: 40%;
+        height: auto;
+    }
+    .authorName {
+        font-size: 1rem;
+    }
+}

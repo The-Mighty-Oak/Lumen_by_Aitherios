@@ -1,0 +1,69 @@
+.commentsWrapper {
+    width: 50%;
+    margin: auto;
+    margin-top: 10vh;
+}
+
+.commentsHeader {
+    font-family: "Montserrat", sans-serif;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 2rem;
+    color: var(--section-header-on-background);
+    margin-top: 7%;
+}
+
+.commentContainer {
+    margin-top: 5vh;
+}
+
+.commenter {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: var(--color-our-accent);
+}
+
+.commenterName {
+    font-weight: 800;
+}
+
+.comments {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: var(--color-our-primary);
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-weight: 500;
+    width: 70%;
+}
+
+@media screen and (max-width: 1280px) {
+    .comments {
+        width: 100%
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .commentsWrapper {
+        width: 80%;
+    }
+    .commentsHeader {
+        font-size: 2rem;
+    }
+    .comments {
+        font-size: 1.2rem;
+        width: 80%
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .commentsWrapper {
+        width: 90%;
+    }
+    .commentsHeader {
+        font-size: 1.5rem;
+    }
+    .comments {
+        font-size: 1.2rem;
+        width: 100%
+    }
+}

@@ -1,0 +1,372 @@
+.headers {
+    display: flex;
+    align-items: center;
+    width: 43vw;
+    margin: auto
+}
+
+.shareFirst {
+    background: none;
+    border: none;
+    transition: 500ms;
+    width: 40px;
+}
+
+.shareFirst:hover {
+    transform: scale(1.2);
+    transition: 500ms;
+}
+
+.articleSectionWrapper {
+    /* width: 43vw; */
+    margin: auto;
+}
+
+.articleContainer {
+    margin-top: 15vh;
+}
+
+.metInfo {
+    display: flex;
+    gap: 20%;
+}
+
+.categories {
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    color: var(--on-accent);
+}
+
+.categoryWrapper {
+    display: flex;
+    align-items: center;
+    padding: 0 2rem 0 1rem;
+    border-radius: 30px;
+    background-color: var( --secondary-accent);
+    gap: 10px;
+    transition: 200ms;
+}
+
+.categoryWrapper:hover {
+    background-color: var(--secondary-accent-accent);
+    transform: scale(1.2);
+    transition: 200ms;
+}
+
+.categoryIcon {
+    width: 15px
+}
+
+.createdAtWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px
+}
+
+.createdAtIcon {
+    width: 20px;
+}
+
+.createdAt {
+    font-size: 1rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: var( --secondary-accent);
+}
+
+.title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--color-our-primary);
+    width: 90%;
+}
+
+.excerpt {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.7rem;
+    line-height: 1.5;
+    font-weight: 500;
+    width: 43vw;
+    margin: auto;
+    margin-top: 5vh;
+    color: var(--secondary-accent);
+}
+
+.featuredImage {
+    margin-bottom: 7vh;
+    width: 50vw;
+    margin: auto;
+    margin-top: 2vh;
+}
+
+.richText {
+    margin: auto;
+    width: 43vw;
+    margin-top: 5vh;
+}
+
+.paragraph {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    color: var(--color-our-primary);
+}
+
+.links {
+    text-decoration: underline;
+    color: var(--color-our-accent);
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.links:hover {
+    color: var(--color-our-primary);
+    font-weight: 600;
+    transition: 300ms;
+}
+
+.blockQuotes {
+    font-size: 2rem;
+    line-height: 1.5;
+    color: var(--color-our-primary);
+    /* text-align: center; */
+    width: 80%;
+    margin: auto;
+}
+
+.headerTwo {
+    font-size: 2.75rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    line-height: 1.5;
+    color: var(--color-our-primary);
+    margin-top: 10vh;
+}
+
+.headerThree {
+    font-size: 2.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    line-height: 1.3;
+    color: var(--color-our-primary);
+    margin-top: 7%;
+}
+
+.headerFour {
+    font-size: 2.25rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    line-height: 1.5;
+    color: var(--color-our-primary);
+    margin-top: 7%;
+}
+
+.headerFive {
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    line-height: 1.5;
+    color: var(--color-our-primary);
+    margin-top: 7%;
+}
+
+.headerSix {
+    font-size: 1.75rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    line-height: 1.5;
+    color: var(--color-our-primary);
+    margin-top: 7%;
+}
+
+.Images {
+    width: 100%;
+    margin: auto;
+}
+
+.Iframe {
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.sharePost {
+    width: fit-content;
+    margin: auto;
+    margin-top: 6%;
+    transition: 500ms;
+}
+
+.sharePostButton {
+    border: none;
+    border-radius: 30px;
+    padding: 0 5rem 0 5rem;
+    background-color: var( --surface);
+    box-shadow: -8px 3px 16px rgb(0, 0, 0, 20%);
+    cursor: url(../public/readPost5.png) 55 05, pointer;
+}
+
+.sharePostButton a {
+    display: flex;
+    align-items: center;
+    gap: 15px
+}
+
+.sharePostText {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var( --text-on-dark-surface);
+    transition: 500ms;
+}
+
+.sharePost:hover {
+    transform: scale(1.2);
+    transition: 500ms;
+}
+
+.sharePost:hover .sharePostText {
+    font-weight: 900;
+    transition: 500ms;
+}
+
+.secondShareIconWrapper {
+    width: 30px;
+}
+
+@media screen and (max-width: 1600px) {
+    .headers,
+    .excerpt,
+    .richText {
+        width: 60vw;
+    }
+    .featuredImage {
+        width: 70vw;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .headers,
+    .excerpt,
+    .richText {
+        width: 90vw;
+    }
+    .featuredImage {
+        width: 100vw;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .categories,
+    .createdAt {
+        font-size: 0.8rem;
+    }
+    .title {
+        font-size: 3rem;
+    }
+    .excerpt {
+        font-size: 1.5rem;
+        margin-top: 5%;
+    }
+    .paragraph {
+        font-size: 1.2rem;
+    }
+    .blockQuotes {
+        font-size: 1.8rem;
+        width: 90%;
+    }
+    .headerTwo {
+        font-size: 2.55rem;
+    }
+    .headerThree {
+        font-size: 2.3rem;
+    }
+    .headerFour {
+        font-size: 2.05rem;
+    }
+    .headerFive {
+        font-size: 1.8rem;
+    }
+    .headerSix {
+        font-size: 1.55rem;
+    }
+    .sharePost {
+        margin-top: 10%;
+    }
+    .Iframe {
+        width: fit-content;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .categories,
+    .createdAt {
+        font-size: 0.8rem;
+    }
+    .metInfo {
+        flex-direction: column;
+        width: fit-content;
+        gap: 5%;
+    }
+    .headers {
+        align-items: flex-start
+    }
+    .createdAtWrapper {
+        width: fit-content;
+        /* gap: 5%; */
+        margin-left: 7%;
+    }
+    .title {
+        font-size: 2.5rem;
+    }
+    .excerpt {
+        font-size: 1.2rem;
+        margin-top: 5%;
+    }
+    .paragraph {
+        font-size: 1rem;
+    }
+    .blockQuotes {
+        font-size: 1.2rem;
+        width: 90%;
+    }
+    .headerTwo {
+        font-size: 2.25rem;
+    }
+    .headerThree {
+        font-size: 2.1rem;
+    }
+    .headerFour {
+        font-size: 1.85rem;
+    }
+    .headerFive {
+        font-size: 1.6rem;
+    }
+    .headerSix {
+        font-size: 1.3rem;
+    }
+    .sharePost {
+        width: fit-content;
+        margin-top: 10%;
+    }
+    .sharePostText {
+        font-size: 1.2rem;
+        width: fit-content;
+    }
+    .sharePostButton a {
+        gap: 20px;
+    }
+    .sharePostButton {
+        padding: 0 2rem 0 2rem;
+    }
+    .Iframe {
+        width: fit-content;
+    }
+}

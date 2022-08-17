@@ -1,0 +1,92 @@
+.cardContainer {
+    color: var( --text-on-surface);
+    font-family: "Montserrat", sans-serif;
+    transition: 500ms;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.cardContainer:hover {
+    background-color: var(--color-our-sec);
+    color: var(--color-our-primary);
+    transition: 500ms;
+}
+
+.cardTitle {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.5;
+    width: 80%;
+    font-family: "Montserrat", sans-serif;
+}
+
+.cardMetInfo {
+    display: flex;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    gap: 10%;
+    font-size: 0.8rem;
+    margin-top: -3%;
+}
+
+.categoryButton {
+    background: none;
+    border: none;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    color: var( --text-on-surface);
+}
+
+
+/* .category,
+.date {
+    width: fit-content;
+} */
+
+.cardMetInfo a {
+    text-decoration: underline;
+    transition: 300ms;
+}
+
+.cardMetInfo a:hover {
+    font-weight: 700;
+    color: var(--color-our-accent);
+    transform: scale(1.1);
+    transition: 300ms;
+}
+
+.cardMetInfo a:focus {
+    font-weight: 700;
+    color: var(--color-our-accent);
+    transform: scale(1.2);
+    transition: 300ms;
+}
+
+.cardExcerpt {
+    font-family: "Georgia", serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    width: 75%;
+}
+
+@media screen and (max-width: 1600px) {
+    .cardExcerpt {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .cardExcerpt {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .cardExcerpt {
+        width: 100%;
+    }
+    .cardMetInfo {
+        margin-top: -6%;
+    }
+}

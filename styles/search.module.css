@@ -1,0 +1,236 @@
+.searchTabContainer {
+    width: 100vw;
+    height: 80vh;
+    background-color: var(--surface);
+    box-shadow: -8px 8px 16px rgb(0, 0, 0, 20%);
+}
+
+.searchingMessageContainer {
+    position: absolute;
+    background-color: var(--surface);
+    width: 20vw;
+    height: min-content;
+    border-radius: 17px;
+    top: 3vw;
+    left: 40vw;
+    z-index: 1000;
+    margin: auto;
+    box-shadow: -8px 8px 16px rgb(0, 0, 0, 20%);
+}
+
+.searchingMessage {
+    color: var( --text-on-surface);
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 0.3;
+    opacity: 0.9;
+    text-align: center;
+}
+
+.errorMessageContainer {
+    position: absolute;
+    background-color: var(--error);
+    width: 20vw;
+    height: min-content;
+    border-radius: 17px;
+    top: 3vw;
+    left: 40vw;
+    z-index: 1000;
+    margin: auto;
+    box-shadow: -8px 8px 16px rgb(0, 0, 0, 20%);
+}
+
+.errorMessage {
+    color: var( --text-on-surface);
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 0.4;
+    opacity: 0.9;
+    text-align: center;
+}
+
+.searchInputWrapper {
+    position: fixed;
+    background-color: var(--dark-surface);
+    width: 100%;
+    top: 0;
+    padding-top: 7%;
+    padding-bottom: 2%;
+}
+
+.search {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.postsWrapper {
+    width: 50%;
+    padding-top: 13%;
+    margin: auto;
+}
+
+.posts {
+    width: 80%;
+    margin-top: 5%;
+}
+
+.postsContainer {
+    height: 45vh;
+    overflow-y: scroll;
+}
+
+.searchInput {
+    width: 60%;
+    height: 50px;
+    border-radius: 8px;
+    border: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    color: var(--color-our-primary);
+    padding: 0.5rem;
+    background-color: var(--color-our-sec);
+}
+
+.searchInput::placeholder {
+    font-size: 1rem;
+}
+
+.postCard {
+    height: 10%;
+    overflow-y: scroll;
+}
+
+.searchButton {
+    width: fit-content;
+    border: none;
+    padding: 0.8rem 0.8rem 0.8rem 0.8rem;
+    background-color: var(--color-our-sec);
+    border-radius: 13px;
+    cursor: pointer;
+    margin-left: 3%;
+    transition: 300ms;
+}
+
+.searchButton:hover {
+    transform: scale(1.2);
+    font-weight: 700;
+    box-shadow: -8px 3px 16px rgb(0, 0, 0, 10%);
+    transition: 300ms;
+}
+
+.searchButton:focus {
+    color: var(--color-our-accent);
+    background: none;
+    border: 2px solid var(--color-our-accent);
+    transition: 200ms;
+}
+
+@media screen and (max-width: 1280px) {
+    .postsWrapper {
+        padding-top: 16%;
+    }
+    /**/
+}
+
+@media screen and (max-width: 1000px) {
+    .postsWrapper {
+        width: 80%;
+        padding-top: 35%;
+        margin: auto;
+    }
+    .posts {
+        width: 90%;
+    }
+    .postsContainer {
+        height: 50vh;
+    }
+    /**/
+    .searchInputWrapper {
+        padding-top: 20%;
+        padding-bottom: 5%;
+    }
+    .search {
+        width: 76vw;
+    }
+    .searchInput {
+        width: 100%;
+        height: 50px;
+    }
+    .searchButton {
+        padding: 0.8rem 0.8rem 0.8rem 0.8rem;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .postsWrapper {
+        width: 90%;
+        padding-top: 35%;
+        margin: auto;
+    }
+    .posts {
+        width: 92%;
+    }
+    .postsContainer {
+        height: 55vh;
+    }
+    /**/
+    .searchInputWrapper {
+        padding-top: 20%;
+        padding-bottom: 5%;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .searchTabContainer {
+        height: 85vh;
+    }
+    .postsWrapper {
+        width: 95%;
+        padding-top: 50%;
+        margin: auto;
+    }
+    .posts {
+        width: 95%;
+    }
+    .postsContainer {
+        height: 60vh;
+    }
+    /**/
+    .searchInputWrapper {
+        padding-top: 30%;
+        padding-bottom: 10%;
+    }
+    .search {
+        width: 90vw;
+    }
+    .searchInput {
+        width: 100%;
+        height: 50px;
+    }
+    .searchButton {
+        width: fit-content;
+    }
+}
+
+@media screen and (max-height: 670px) {
+    .searchTabContainer {
+        height: 90vh;
+    }
+    .postsWrapper {
+        width: 95%;
+        padding-top: 48%;
+        margin: auto;
+    }
+    .posts {
+        width: 95%;
+    }
+    .postsContainer {
+        height: 55vh;
+    }
+}

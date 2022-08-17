@@ -1,0 +1,155 @@
+.commentFormWrapper {
+    width: 50%;
+    margin: auto;
+}
+
+.commentFormPrompt {
+    font-family: "Montserrat", sans-serif;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 2.5rem;
+    color: var(--section-header-on-background);
+    margin-top: 7%;
+}
+
+.textArea,
+.inputArea {
+    border: none;
+    width: 500px;
+    border-radius: 8px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    color: black;
+    padding: 0.5rem;
+}
+
+.inputArea {
+    margin-top: 12px;
+}
+
+.textArea::placeholder,
+.inputArea::placeholder {
+    font-size: 1rem;
+}
+
+.checkArea {
+    margin-top: 5vh;
+}
+
+.error,
+.success {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+
+.error {
+    background-color: var(--error);
+    position: fixed;
+    border-radius: 30px;
+    top: 5%;
+    left: 40%;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--color-our-primary);
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 1rem 3rem 1rem 3rem;
+}
+
+.success {
+    background-color: var(--success);
+    position: fixed;
+    border-radius: 30px;
+    top: 5%;
+    left: 40%;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--color-our-primary);
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 1rem 3rem 1rem 3rem;
+}
+
+.postButton {
+    border: none;
+    border-radius: 30px;
+    padding: 1rem 3rem 1rem 3rem;
+    background-color: var( --surface);
+    box-shadow: -8px 3px 16px rgb(0, 0, 0, 20%);
+    cursor: url(../public/readPost5.png) 55 05, pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var( --text-on-dark-surface);
+    transition: 500ms;
+}
+
+.postButton:hover {
+    transform: scale(1.2);
+    font-weight: 900;
+    transition: 500ms;
+}
+
+.postButton:focus {
+    color: var(--color-our-primary);
+    background: none;
+    border: 2px solid var(--color-our-primary);
+    transition: 200ms;
+}
+
+.checkContainer {
+    margin-top: 15px;
+    margin-left: 40px;
+}
+
+.checker {
+    width: 20px;
+    height: 20px;
+}
+
+.checkLabel {
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 0.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--color-our-primary);
+}
+
+@media screen and (max-width: 1000px) {
+    .commentFormWrapper {
+        width: 80%;
+    }
+    .commentFormPrompt {
+        font-size: 2rem
+    }
+    .postButton {
+        padding: 1rem 3rem 1rem 3rem;
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .commentFormWrapper {
+        width: 90%;
+        margin: auto;
+    }
+    .commentFormPrompt {
+        font-size: 1.5rem
+    }
+    .checkLabel {
+        font-size: 0.8rem
+    }
+    .textArea,
+    .inputArea {
+        width: 100%;
+    }
+    .postButton {
+        padding: 1rem 2rem 1rem 2rem;
+        font-size: 1rem;
+    }
+    .checker {
+        width: 17px;
+    }
+    .checkContainer {
+        margin-left: 23px;
+    }
+}

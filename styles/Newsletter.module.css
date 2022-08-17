@@ -1,0 +1,197 @@
+.subscribeContainer {
+    margin-top: 3%;
+    color: var(--text-on-dark-surface);
+    width: 30%;
+    margin: auto;
+    padding-bottom: 5%;
+}
+
+.subscribeSectionHeader {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.subscribeCallToAction {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.subscribeFormContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.subscribeFormInput {
+    border: none;
+    width: 22vw;
+    border-radius: 8px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    color: var(--color-our-primary);
+    padding: 0.7rem;
+    background-color: var( --input-on-dark-surface);
+}
+
+.subscribeFormInput::placeholder {
+    font-size: 1rem;
+}
+
+.subscribeFormSubmit {
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    background-color: var(--color-our-sec);
+    color: var(--color-our-primary);
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 3%;
+    box-shadow: -8px 3px 16px rgb(0, 0, 0, 10%);
+    transition: 300ms;
+}
+
+.subscribeFormSubmit:hover {
+    transform: scale(1.2);
+    font-weight: 700;
+    box-shadow: -8px 3px 16px rgb(0, 0, 0, 10%);
+    transition: 300ms;
+}
+
+.subscribeFormSubmit:focus {
+    color: var(--color-our-sec);
+    background: none;
+    border: 2px solid var(--color-our-sec);
+    transition: 200ms;
+}
+
+.subscribeFormSubmit {
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    padding: 1rem 3rem 1rem 3rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background-color: var(--color-our-accent);
+    color: var(--on-accent);
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10%;
+    box-shadow: -8px 3px 16px rgb(0, 0, 0, 10%);
+    transition: 300ms;
+}
+
+.subscribeFormSubmit:hover {
+    transform: scale(1.2);
+    font-weight: 700;
+    box-shadow: -8px 3px 16px rgb(0, 0, 0, 10%);
+    transition: 300ms;
+}
+
+.subscribeFormSubmit:focus {
+    color: var( --text-on-dark-surface);
+    background: none;
+    border: 2px solid var( --text-on-dark-surface);
+    transition: 200ms;
+}
+
+.errorMessage,
+.successMessage,
+.sendingText {
+    font-size: 1rem;
+    padding: 0.5rem;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--color-our-primary);
+    text-align: center;
+    font-weight: 600;
+    padding: 2rem;
+}
+
+.errorMessage {
+    color: var(--error);
+}
+
+.successMessage {
+    color: var(--success);
+}
+
+@media screen and (max-width: 1600px) {
+    .subscribeContainer {
+        width: 50%;
+    }
+    .subscribeFormInput {
+        width: 35vw;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .subscribeContainer {
+        width: 100%;
+        margin: auto;
+        margin-top: 8%;
+    }
+    .subscribeFormInput {
+        width: 60vw;
+    }
+    .subscribeSectionHeader {
+        font-size: 2rem;
+        font-weight: 500;
+        line-height: 1.5;
+    }
+    .subscribeFormContainer {
+        flex-direction: column;
+    }
+    .subscribeFormSubmit {
+        width: fit-content;
+        margin: auto;
+        margin-top: 10%;
+        margin-bottom: 28%;
+    }
+    .subscribeCallToAction {
+        font-size: 1rem;
+        margin-top: -2%;
+        margin-bottom: 4%;
+    }
+    .subscribeFormSubmit {
+        padding: 1rem 1.5rem 1rem 1.5rem;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .subscribeContainer {
+        width: 90%;
+        margin: auto;
+    }
+    .subscribeFormInput {
+        width: 80vw;
+    }
+    .subscribeSectionHeader {
+        font-size: 2rem;
+    }
+    .subscribeFormSubmit {
+        margin-left: 0%;
+    }
+    .errorMessage,
+    .successMessage,
+    .sendingText {
+        font-size: 0.8rem;
+        padding: 0.5rem;
+        margin-top: -6%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .subscribeSectionHeader {
+        font-size: 1.5rem;
+    }
+    .subscribeCallToAction {
+        font-size: 1rem;
+        margin-top: 2%;
+        margin-bottom: 5%;
+    }
+}

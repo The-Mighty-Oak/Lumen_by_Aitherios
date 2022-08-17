@@ -1,0 +1,305 @@
+.navbarWrapper {
+    width: 85%;
+    margin: auto;
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.searchBar {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.navBrand {
+    cursor: pointer;
+    width: 15%;
+    min-width: 180px;
+}
+
+.MenuMobile {
+    display: none;
+}
+
+.navLinksContainer {
+    display: flex;
+    color: var(--color-our-primary);
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.navLinks {
+    padding: 0 1.5rem 0 1.5rem;
+    margin: 0 0 8px 0;
+    cursor: url(../public/smile.png) 55 05, pointer;
+}
+
+.navLinks:hover {
+    font-weight: 900;
+}
+
+.navElement {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 12%;
+    min-width: 180px;
+    max-width: 250px;
+}
+
+.ham {
+    width: 70px;
+    height: 70px;
+    background-color: var(--color-our-accent);
+    border-radius: 50%;
+    position: fixed;
+    right: 45px;
+    z-index: 99;
+    box-shadow: -8px 3px 16px rgb(0, 0, 0, 20%);
+    transition: 300ms;
+}
+
+.ham:hover {
+    background-color: var(--color-our-primary);
+    transition: 300ms;
+}
+
+.ham:focus {
+    background-color: var(--color-our-primary);
+    transition: 300ms;
+    outline: var(--color-our-accent);
+}
+
+.searchButton {
+    background: none;
+    border: none;
+}
+
+.colourModeToggle {
+    position: fixed;
+    right: 130px;
+    z-index: 101;
+}
+
+.searchContainer {
+    height: 56px;
+    width: 122px;
+    background-color: var(--color-our-primary);
+    border-radius: 31px;
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+    cursor: url(../public/searchCursor.png), text;
+    transition: 300ms;
+}
+
+.searchContainer:hover {
+    background: none;
+    border: var(--color-our-primary) 3px solid;
+    transition: 300ms;
+}
+
+.searchContainer:focus {
+    box-shadow: 0 0 1px var(--color-our-accent);
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--color-our-accent);
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: '';
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: var(--color-our-sec);
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    z-index: 20;
+}
+
+input:checked+.slider {
+    background-color: var(--color-our-primary);
+}
+
+input:focus+.slider {
+    box-shadow: 1px 1px 26px var( --toggle-glow);
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+    background-color: #35393E;
+}
+
+.slider {
+    border-radius: 34px;
+}
+
+.slider:before {
+    border-radius: 50%;
+}
+
+.sun {
+    position: absolute;
+    cursor: pointer;
+    top: 20%;
+    left: 60%;
+    right: 0;
+    bottom: 0;
+}
+
+.moon {
+    position: absolute;
+    cursor: pointer;
+    top: 20%;
+    left: 8%;
+    right: 0;
+    bottom: 0;
+}
+
+.test {
+    position: fixed;
+}
+
+.searchSmall {
+    display: none;
+}
+
+@media screen and (max-width: 1600px) {
+    .navbarWrapper {
+        margin: 2% 3% 0 3%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    .navLinks {
+        padding: 0 1rem 0 1rem;
+        margin: 0 0 8px 0;
+        cursor: url(../public/smile.png) 55 05, pointer;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .searchButton {
+        display: none;
+    }
+    .searchSmall {
+        display: unset;
+        background: none;
+        border: none;
+    }
+    .navElement {
+        width: 12%;
+        min-width: 120px;
+        max-width: 250px;
+    }
+    .searchContainerM {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        cursor: url(../public/searchCursor.png), pointer;
+    }
+    .colourModeToggle {
+        right: 140px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .navLinksContainer,
+    .ham {
+        display: none;
+    }
+    .navbarWrapper {
+        margin-top: 3vh;
+    }
+    .searchSmall {
+        margin-left: 2vw;
+    }
+    .MenuMobile {
+        width: 70px;
+        height: 70px;
+        background-color: var(--color-our-accent);
+        border-radius: 50%;
+        position: fixed;
+        top: 20px;
+        right: 30px;
+        z-index: 99;
+        box-shadow: -8px 3px 16px rgb(0, 0, 0, 20%);
+        transition: 300ms;
+        display: unset;
+    }
+    .MenuMobile:hover {
+        background-color: var(--color-our-primary);
+        transition: 300ms;
+    }
+    .MenuMobile:focus {
+        background-color: var(--color-our-primary);
+        transition: 300ms;
+        outline: var(--color-our-accent);
+    }
+    .navElement {
+        width: 180px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .searchSmall {
+        margin-left: -12%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .searchSmall {
+        display: none;
+    }
+    .navBrand {
+        margin-top: 0.5vh;
+    }
+    .navbarWrapper {
+        margin: 10px 12px 0 12px;
+    }
+    .colourModeToggle {
+        top: 4.5vh;
+        right: 12px;
+    }
+    .MenuMobile {
+        top: auto;
+        right: 12px;
+        bottom: 45px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .colourModeToggle {
+        top: 22px;
+    }
+}

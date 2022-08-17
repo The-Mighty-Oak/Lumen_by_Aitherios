@@ -1,0 +1,14 @@
+.navigation {
+    position: relative;
+    z-index: 2;
+}
+
+.categoriesTab {
+    position: relative;
+    z-index: 1;
+    /* margin-top: 15vh; */
+}
+
+.categoriesTabLarge {
+    margin-top: 15vh;
+}
