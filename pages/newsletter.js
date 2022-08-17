@@ -6,7 +6,7 @@ import { Footer, Socials, NewsLetterForm, SubscribeForm } from '../components'
 import { getSocials } from '../services';
 import { useState } from 'react';
 import { decode } from 'html-entities';
-import News from '../components/news';
+import News from '../components/News';
 import Image from 'next/image'
 import newStyles from '../styles/newsletterPage.module.css'
 
